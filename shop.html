@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <style>
+        header {
+        display: flex;
+        padding-left: 30px;
+        justify-content: baseline;
+        }
+        nav {
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+        a {
+            padding: 25px;
+        }
+        nav a:hover {
+            color: rgb(25, 226, 226);
+        }
+        .search {
+            margin-right: 750px;
+            margin-top: 15px;
+        }
+        .search-bar {
+            position: absolute;
+            left: 1120px;
+        }
+        .icons {
+            position: absolute;
+            display: flex;
+            height: 20px;
+            padding-top: 18px;
+            padding-right: 320px;
+            gap:35px;
+            left: 1200px;
+        }
+        
+        .email{
+        height: 30px;
+        width: 240px;
+        background-color: white;
+        border: 0;
+        margin-left: 990px;
+        }
+        .subscribe{
+        height: 32px;
+        width: 100px;
+        background-color: black;
+        color: white;
+        border: 0;
+        border-top-right-radius:5px;
+        border-bottom-right-radius:5px;
+        position: absolute;
+        top: 2395px;
+        left:1240px ;
+        }
+        footer{
+        background-color: white;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        margin-top:0px;
+        }
+        .two{
+        height: 50px;
+        margin-top: -20px;
+        }
+        nav{
+        margin: auto;
+        grid-template-columns: 25% 25% 25% 25%;
+        font-size: 10px;
+        color: gray;
+        }
+        ul a{
+        color: black;
+        text-decoration: none;
+        }
+        .section{
+        height: 100px;
+        width: 400px;
+        }
+        .ll :hover{
+        color: orangered;
+        }
+        .popular {
+        border: 2px solid grey;
+        border-radius: 20px;
+        width: 320px;
+        padding: 20px;
+        margin-left: 30px;
+        }
+        .New-arrivals{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: space-evenly;
+        gap: 60px;
+        margin-left: 100px;
+        margin-right: 70px;
+        /* border: 2px solid grey; */
+        border-radius: 20px;
+        width: 200px;
+        padding: 30px;
+        margin-left: 20px;
+        }
+    .pic1-1 {
+        background-image: url(../Images/product-1-1.jpg);
+        height: 250px;
+        width: 220px;
+        transition: background-image 0.7s ease-in;
+        background-size:cover;
+        margin-left: 5px;
+        padding: 45px;
+        border-radius: 20px;
+        /* padding-left: 50px; */
+    }
+
+    .pic1-1:hover {
+        background-image: url(../Images/product-1-2.jpg);
+        /* background-position: right; */
+    }
+    .pic2-1 {
+        background-image: url(../Images/product-2-1.jpg);
+        height: 250px;
+        width: 220px;
+        transition: background-image 0.7s ease-in;
+        background-size:cover;
+        margin-left: 5px;
+        padding: 45px;
+        border-radius: 20px;
+    }
+
+    .pic2-1:hover {
+        background-image: url(../Images/product-2-2.jpg);
+        /* background-position: right; */
+    }
+
+    .pic3-1 {
+        background-image: url(../Images/product-3-1.jpg);
+        height: 250px;
+        width: 220px;
+        transition: background-image 0.7s ease-in;
+        background-size:cover;
+        margin-left: 5px;
+        padding: 45px;
+        border-radius: 20px;
+    }
+
+    .pic3-1:hover {
+        background-image: url(../Images/product-3-2.jpg);
+        /* background-position: right; */
+    }
+
+    .pic4-1 {
+        background-image: url(../Images/product-4-1.jpg);
+        height: 250px;
+        width: 220px;
+        transition: background-image 0.7s ease-in;
+        background-size:cover;
+        margin-left: 5px;
+        padding: 45px;
+        border-radius: 20px;
+    }
+
+    .pic4-1:hover {
+        background-image: url(../Images/product-4-2.jpg);
+        /* background-position: right; */
+    }
+    .pic5-1 {
+        background-image: url(../Images/product-5-1.jpg);
+        height: 250px;
+        width: 220px;
+        transition: background-image 0.7s ease-in;
+        background-size:cover;
+        margin-left: 5px;
+        padding: 45px;
+        border-radius: 20px;
+    }
+
+    .pic5-1:hover {
+        background-image: url(../Images/product-5-2.jpg);
+        /* background-position: right; */
+    }
+    .pic6-1 {
+        background-image: url(../Images/product-6-1.jpg);
+        height: 250px;
+        width: 220px;
+        transition: background-image 0.7s ease-in;
+        background-size:cover;
+        margin-left: 5px;
+        padding: 45px;
+        border-radius: 20px;
+    }
+
+    .pic6-1:hover {
+        background-image: url(../Images/product-6-2.jpg);
+        /* background-position: right; */
+    }
+    .pic7-1 {
+        background-image: url(../Images/product-7-1.jpg);
+        height: 250px;
+        width: 220px;
+        transition: background-image 0.7s ease-in;
+        background-size:cover;
+        margin-left: 5px;
+        padding: 45px;
+        border-radius: 20px;
+    }
+
+    .pic7-1:hover {
+        background-image: url(../Images/product-7-2.jpg);
+        /* background-position: right; */
+    }
+    .pic8-1 {
+        background-image: url(../Images/product-8-1.jpg);
+        height: 250px;
+        width: 220px;
+        transition: background-image 0.7s ease-in;
+        background-size:cover;
+        margin-left: 5px;
+        padding: 45px;
+        border-radius: 20px;
+    }
+
+    .pic8-1:hover {
+        background-image: url(../Images/product-8-2.jpg);
+        /* background-position: right; */
+    }
+    .pic9-1 {
+        background-image: url(../IMAGES/product-10-1\ \(1\).jpg);
+        height: 250px;
+        width: 220px;
+        transition: background-image 0.7s ease-in;
+        background-size:cover;
+        margin-left: 5px;
+        padding: 45px;
+        border-radius: 20px;
+    }
+
+    .pic9-1:hover {
+        background-image: url(../Images/product-9-2.jpg);
+        /* background-position: right; */
+    }
+    .pic10-1 {
+        background-image: url(../IMAGES/product-10-1\ \(1\).jpg);
+        height: 250px;
+        width: 220px;
+        transition: background-image 0.7s ease-in;
+        background-size:cover;
+        margin-left: 5px;
+        padding: 45px;
+        border-radius: 20px;
+    }
+
+    .pic10-1:hover {
+        background-image: url(../Images/product-10-2.jpg);
+        /* background-position: right; */
+    }
+    .pic11-1 {
+        background-image: url(../IMAGES/product-4-1.jpg);
+        height: 250px;
+        width: 220px;
+        transition: background-image 0.7s ease-in;
+        background-size:cover;
+        margin-left: 5px;
+        padding: 45px;
+        border-radius: 20px;
+    }
+
+    .pic11-1:hover {
+        background-image: url(../Images/product-11-2.jpg);
+        /* background-position: right; */
+    }
+    .pic12-1 {
+        background-image: url(../IMAGES/product-12-1\ \(2\).jpg);
+        height: 250px;
+        width: 220px;
+        transition: background-image 0.7s ease-in;
+        background-size:cover;
+        margin-left: 5px;
+        padding: 45px;
+        border-radius: 20px;
+    }
+
+    .pic12-1:hover {
+        background-image: url(../Images/product-12-2.jpg);
+        /* background-position: right; */
+    }
+    .hot-1{
+        position: absolute;
+        width: 35px;
+        height: 25px;
+        margin-top: -350px;
+        margin-left: 15px;
+        border-radius: 20px;
+    }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../IMAGES/logo.png" height="45px" style="margin-left: 50px;">
+        <nav>
+            <a style="font-size: 15px;color: black;text-decoration: none;" href="./home.html">Home</a>
+            <a style="font-size: 15px;color: rgb(34, 125, 125);text-decoration: none;" href="./shop.html">Shop</a>
+            <a style="font-size: 15px;color: black;text-decoration: none;" href="./myaccount.html">My Account</a>
+            <a style="font-size: 15px;color: black;text-decoration: none;" href="./comapre.html" >Compare</a>
+            <a style="font-size: 15px;color: black;text-decoration: none;" href="./login.html" >Login</a>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="search for the items" style="margin-left: 35PX;">
+            <img src="../Images/search.png" class="search-bar">
+        </div>
+        <div class="icons">
+            <img src="../IMAGES/icon-heart (1).svg">
+            <img src="../IMAGES/icon-cart.svg">
+        </div>
+    </header>
+    <div style="display: flex; background-color: rgb(223, 221, 221);">
+        <p style="margin-left: 90px;">Home > </p> 
+        <p>Shop  </p> 
+    </div>
+    <p>We found <span style="color: rgb(20, 87, 87);"><b>688</b></span> items for you!</p>
+    <section>
+        <div class="New-arrivals">
+            <div class="popular">
+                <div class="pic1-1"></div>
+                <div class="hot-1">
+                    <p style="text-align: center; border:0 ; border-radius: 10px; background-color: palevioletred;color: white;"
+                        class="hot1">hot</p>
+                </div>
+                <div style="margin-left: 30px;">
+                    <p>clothing</p>
+                    <h3>colorful pattern shirts</h3>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    
+                    <p><span style="color: green; font-size: 25px; ">$238.85</span> <span
+                            style="text-decoration: line-through;">$245.8</span></p>
+                    <div style="position: absolute; margin-left: 250px; margin-top: -50px;">
+                        <img src="../IMAGES/icon-cart.svg" height="30px">
+                    </div>
+                </div>
+            </div>
+        
+            <div class="popular">
+                <div class="pic2-1"></div>
+                <div class="hot-1">
+                    <p style="text-align: center; border:0 ; border-radius: 10px; background-color:rgb(168, 241, 217);color: white;"
+                        class="hot1">hot</p>
+                </div>
+                <div style="margin-left: 30px;">
+                    <p>clothing</p>
+                    <h3>colorful pattern shirts</h3>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    
+                    <p><span style="color: green; font-size: 25px; ">$238.85</span> <span
+                            style="text-decoration: line-through;">$245.8</span></p>
+                    <div style="position: absolute; margin-left: 250px; margin-top: -50px;">
+                        <img src="../IMAGES/icon-cart.svg" height="30px">
+                    </div>
+                </div>
+            </div>
+        
+            <div class="popular">
+                <div class="pic3-1"></div>
+                <div class="hot-1">
+                    <p style="text-align: center; border: 0 ; border-radius: 10px; background-color: rgb(238, 189, 146);color: white;"
+                        class="hot1">hot</p>
+                </div>
+                <div style="margin-left: 30px;">
+                    <p>clothing</p>
+                    <h3>colorful pattern shirts</h3>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    
+                    <p><span style="color: green; font-size: 25px; ">$238.85</span> <span
+                            style="text-decoration: line-through;">$245.8</span></p>
+                    <div style="position: absolute; margin-left: 250px; margin-top: -50px;">
+                        <img src="../IMAGES/icon-cart.svg" height="30px">
+                    </div>
+                </div>
+            </div>
+        
+            <div class="popular">
+                <div class="pic4-1"></div>
+                <div class="hot-1">
+                    <p style="text-align: center; border: 0; border-radius: 10px; background-color: rgb(175, 218, 242);color: white;"
+                        class="hot1">hot</p>
+                </div>
+                <div style="margin-left: 30px;">
+                    <p>clothing</p>
+                    <h3>colorful pattern shirts</h3>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    
+                    <p><span style="color: green; font-size: 25px; ">$238.85</span> <span
+                            style="text-decoration: line-through;">$245.8</span></p>
+                    <div style="position: absolute; margin-left: 250px; margin-top: -50px;">
+                        <img src="../IMAGES/icon-cart.svg" height="30px">
+                    </div>
+                </div>
+            </div>
+            <div class="popular">
+                <div class="pic5-1"></div>
+                <div class="hot-1">
+                    <p style="text-align: center; border: 0 ; border-radius: 10px; background-color: rgb(175, 218, 242);color: white;""
+                        class="hot1">-30%</p>
+                </div>
+                <div style="margin-left: 30px;">
+                    <p>clothing</p>
+                    <h3>colorful pattern shirts</h3>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    
+                    <p><span style="color: green; font-size: 25px; ">$238.85</span> <span
+                            style="text-decoration: line-through;">$245.8</span></p>
+                    <div style="position: absolute; margin-left: 250px; margin-top: -50px;">
+                        <img src="../IMAGES/icon-cart.svg" height="30px">
+                    </div>
+                </div>
+            </div>
+            <div class="popular">
+                <div class="pic6-1"></div>
+                <div class="hot-1">
+                    <p style="text-align: center; border: 0 ; border-radius: 10px; background-color: rgb(175, 218, 242);color: white;"
+                        class="hot1">-22%</p>
+                </div>
+                <div style="margin-left: 30px;">
+                    <p>clothing</p>
+                    <h3>colorful pattern shirts</h3>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    
+                    <p><span style="color: green; font-size: 25px; ">$238.85</span> <span
+                            style="text-decoration: line-through;">$245.8</span></p>
+                    <div style="position: absolute; margin-left: 250px; margin-top: -50px;">
+                        <img src="../IMAGES/icon-cart.svg" height="30px">
+                    </div>
+                </div>
+            </div>
+            <div class="popular">
+                <div class="pic7-1"></div>
+                <div class="hot-1">
+                    <p style="text-align: center; border: 0 ; border-radius: 10px; background-color: rgb(171, 208, 171);color: white;"
+                        class="hot1">-22%</p>
+                </div>
+                <div style="margin-left: 30px;">
+                    <p>clothing</p>
+                    <h3>colorful pattern shirts</h3>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    
+                    <p><span style="color: green; font-size: 25px; ">$238.85</span> <span
+                            style="text-decoration: line-through;">$245.8</span></p>
+                    <div style="position: absolute; margin-left: 250px; margin-top: -50px;">
+                        <img src="../IMAGES/icon-cart.svg" height="30px">
+                    </div>
+                </div>
+            </div>
+            <div class="popular">
+                <div class="pic8-1"></div>
+                <!-- <div class="hot-1">
+                    <p style="text-align: center; border: 0 ; border-radius: 10px; background-color: peachpuff;"
+                        class="hot1">hot</p>
+                </div> -->
+                <div style="margin-left: 30px;">
+                    <p>clothing</p>
+                    <h3>colorful pattern shirts</h3>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    
+                    <p><span style="color: green; font-size: 25px; ">$238.85</span> <span
+                            style="text-decoration: line-through;">$245.8</span></p>
+                    <div style="position: absolute; margin-left: 250px; margin-top: -50px;">
+                        <img src="../IMAGES/icon-cart.svg" height="30px">
+                    </div>
+                </div>
+            </div>
+            <div class="popular">
+                <div class="pic9-1"></div>
+                <div class="hot-1">
+                    <p style="text-align: center; border: 0 ; border-radius: 10px; background-color: rgb(129, 204, 239);color: white;"
+                        class="hot1">-30%</p>
+                </div>
+                <div style="margin-left: 30px;">
+                    <p>clothing</p>
+                    <h3>colorful pattern shirts</h3>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    
+                    <p><span style="color: green; font-size: 25px; ">$238.85</span> <span
+                            style="text-decoration: line-through;">$245.8</span></p>
+                    <div style="position: absolute; margin-left: 250px; margin-top: -50px;">
+                        <img src="../IMAGES/icon-cart.svg" height="30px">
+                    </div>
+                </div>
+            </div>
+            <div class="popular">
+                <div class="pic10-1"></div>
+                <div class="hot-1">
+                    <p style="text-align: center; border: 0 ; border-radius: 10px; background-color: rgb(175, 218, 242);color: white;"
+                        class="hot1">-22%</p>
+                </div>
+                <div style="margin-left: 30px;">
+                    <p>clothing</p>
+                    <h3>colorful pattern shirts</h3>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    
+                    <p><span style="color: green; font-size: 25px; ">$238.85</span> <span
+                            style="text-decoration: line-through;">$245.8</span></p>
+                    <div style="position: absolute; margin-left: 250px; margin-top: -50px;">
+                        <img src="../IMAGES/icon-cart.svg" height="30px">
+                    </div>
+                </div>
+            </div>
+            <div class="popular">
+                <div class="pic11-1"></div>
+                <div class="hot-1">
+                    <p style="text-align: center; border: 0 ; border-radius: 10px; background-color: rgb(171, 208, 171);color: white;"
+                        class="hot1">-22%</p>
+                </div>
+                <div style="margin-left: 30px;">
+                    <p>clothing</p>
+                    <h3>colorful pattern shirts</h3>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    
+                    <p><span style="color: green; font-size: 25px; ">$238.85</span> <span
+                            style="text-decoration: line-through;">$245.8</span></p>
+                    <div style="position: absolute; margin-left: 250px; margin-top: -50px;">
+                        <img src="../IMAGES/icon-cart.svg" height="30px">
+                    </div>
+                </div>
+            </div>
+            <div class="popular">
+                <div class="pic12-1"></div>
+                <div style="margin-left: 30px;">
+                    <p>clothing</p>
+                    <h3>colorful pattern shirts</h3>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    <i class="fa-regular fa-star" style="color: gold;"></i>
+                    
+                    <p><span style="color: green; font-size: 25px; ">$238.85</span> <span
+                            style="text-decoration: line-through;">$245.8</span></p>
+                    <div style="position: absolute; margin-left: 250px; margin-top: -50px;">
+                        <img src="../IMAGES/icon-cart.svg" height="30px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div>
+        <input type="button" value="01" style="background-color: rgb(34, 96, 96);color: white;height: 25px;border: 0;border-radius: 3px;margin-left: 600px;">
+        <p style="margin-left: 640px;margin-top: -20px;">02</p>
+        <p style="margin-left: 680px;margin-top: -35px;">03</p>
+        <p style="margin-left: 720px;margin-top: -35px;">...</p>
+        <p style="margin-left: 760px;margin-top: -35px;">16</p>
+        <p style="margin-left: 800px;margin-top: -35px;">>></p>
+    </div>
+
+    <div style="display: flex; background-color: rgb(146, 181, 181); ">
+        <div style="margin-top: -70px;">
+            <img src="../Images/icon-email.svg" height="45px" style="margin-left: 60px;margin-top: 80px;">
+            <p style="margin-left: 140px;margin-top: -40px;">Sign in to Newsletter</p>
+            <p style="margin-left: 690px;margin-top: -34px;">....and recieve $25 coupon for first shopping</p>
+            <input type="email" placeholder="Enter Your Email" class="email" style="position: absolute;margin-top: -45px; ">
+            <input type="button" value="Subscribe" class="subscribe" style="margin-top: 126.5px;">
+        </div>
+    </div>
+    </div>
+    <footer>
+        <nav>
+        <img src="../IMAGES/logo.png" class="two"/>
+        <p style="color: gray;font-size: 12px;">Contact</p>
+        <p><span style="font-size: 15px; color: rgb(7, 64, 64);">Address:</span><span style="font-size: 15px;">13 Tlemcen Road,Street 32,Beb-Wahren</span></p>
+        <p><span style="font-size: 15px; color: rgb(7, 64, 64);">Phone:</span><span style="font-size: 15px;">+01 2222 365/(+91)01 2345 6789</span></p>
+        <p><span style="font-size: 15px; color: rgb(7, 64, 64);">Hours:</span><span style="font-size: 15px;">10:00- 18:00,Mon-Sat</span></p>
+        <p style="font-size: 13px;">Follow Me</p>
+        <img src="../Images/icon-facebook.svg" height="15px">
+        <img src="../Images/icon-twitter.svg" height="15px">
+        <img src="../Images/icon-instagram.svg" height="15px">
+        <img src="../Images/icon-pinterest.svg" height="15px">
+        <img src="../Images/icon-youtube.svg" height="15px">
+        </nav>
+        <ul class="ll">
+            <h5 style="color: gray;">Address</h5>
+            <p style="margin-left: -20px;"><a href="#">About Us</a></p>
+            <p style="margin-left: -20px;"><a href="#">Delivery Information</a></p>
+            <p style="margin-left: -20px;"><a href="#">Privacy Policy</a></p>
+            <p style="margin-left: -20px;"><a href="#">Terms& Conditions</a></p>
+            <p style="margin-left: -20px;"><a href="#">Contact Us</a></p>
+            <p style="margin-left: -20px;"><a href="#">Support Center</a></p>
+        </ul>
+        <ul class="ll">
+            <h5 style="color: gray;">My Account</h5>
+            <p style="margin-left: -20px;"><a href="#">View Cart</a></p>
+            <p style="margin-left: -20px;"><a href="#">Sign In</a></p>
+            <p style="margin-left: -20px;"><a href="#">My Wishlist</a></p>
+            <p style="margin-left: -20px;"><a href="#">Track My Order</a></p>
+            <p style="margin-left: -20px;"><a href="#">Help</a></p>
+            <p style="margin-left: -20px;"><a href="#">Order</a></p>
+        </ul>
+        <ul type="none">
+            <h5 style="color: gray;">Secure Payed Gateways</h5>
+            <img src="../IMAGES/payment-method (1).png">
+            
+        </ul>
+    </footer>
+</body>
+</html>

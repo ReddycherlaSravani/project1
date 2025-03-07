@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my account</title>
+    <style>
+        header {
+            /* background-color: rgb(72, 69, 75); */
+            display: flex;
+            padding-left: 30px;
+            justify-content: baseline;
+        }
+
+        nav {
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+
+        a {
+            padding: 20px;
+        }
+
+        nav a:hover {
+            color: rgb(25, 226, 226);
+        }
+
+        .search {
+            margin-left: -45px;
+            margin-right: 950px;
+            margin-top: 18px;
+        }
+
+        .search-bar {
+            position: absolute;
+            left: 910px;
+        }
+
+        .icons {
+            position: absolute;
+            display: flex;
+            height: 20px;
+            margin-top: 20px;
+            padding-left: 940px;
+            gap: 30px;
+        }
+
+        .home {
+            position: absolute;
+            margin-top: 50px;
+            padding-left: 150px;
+            background-color: rgb(223, 221, 221);
+            height: 50px;
+            width: 1800px;
+            margin-left: -40px;
+        }
+        .dashboard {
+            width: 500px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+        }
+        .header {
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .content {
+            padding: 15px;
+            font-size: 14px;
+            color: #333;
+        }
+        .subscribe{
+            position: absolute;
+            top: 707px;
+            height: 46px;
+            width: 120px;
+            color: white;
+            background-color: black;
+            border: 0px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        footer{
+        background-color: white;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        margin-top:0px;
+        }
+        .two{
+        height: 50px;
+        margin-top: -20px;
+        }
+        nav{
+        margin: auto;
+        grid-template-columns: 25% 25% 25% 25%;
+        font-size: 10px;
+        color: gray;
+        }
+        ul a{
+        color: black;
+        text-decoration: none;
+        }
+        .section{
+        height: 100px;
+        width: 400px;
+        }
+        .ll :hover{
+        color: orangered;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../IMAGES/logo.png" height="45px" style="margin-left: 70px;">
+        <nav style="font-size: 15px;">
+            <a href="./home.html">Home</a>
+            <a href="./shop.html">Shop</a>
+            <a style="color: aqua;" href="./myaccount.html">My Account</a>
+            <a href="./comapre.html">Compare</a>
+            <a href="./login.html">Login</a>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="search for the items" style="margin-left: 45px;">
+            <img src="../Images/search.png" class="search-bar">
+        </div>
+
+        <div class="icons">
+            <img src="../IMAGES/icon-heart (1).svg">
+            <img src="../IMAGES/icon-cart.svg">
+        </div>
+    </header>
+    <br>
+    <div class="home">
+        <p>Home > Account</p>
+    </div>
+
+    <div
+        style="border: 2px solid grey; margin-top: 180px; height: 40px;padding-top: 20px; margin-left: 100px; margin-right: 1400px; padding-left: 30px; padding-bottom: 10px;background-color: rgb(98, 159, 159); ">
+        <img src="../IMAGES/menu-burger.svg" height="30px">
+        <p style="margin-left: 45px; margin-top: -30px; font-size: 20px;">Dashboard</p>
+    </div>
+    <div
+        style="border: 2px solid gray; margin-top: -2px; height: 40px;padding-top: 20px; margin-left: 100px; margin-right: 1400px; padding-left: 30px; padding-bottom: 10px;">
+        <img src="../IMAGES/icon-cart.svg" height="30px">
+        <p style="margin-left: 45px; margin-top: -30px; font-size: 20px;">Orders</p>
+    </div>
+    <div
+        style="border: 2px solid gray; margin-top: -3px; height: 40px;padding-top: 20px; margin-left: 100px; margin-right: 1400px; padding-left: 30px; padding-bottom: 10px;">
+        <img src="../IMAGES/person.png" height="30px">
+        <p style="margin-left: 45px; margin-top: -30px; font-size: 20px;">Update Profile</p>
+    </div>
+    <div
+        style="border: 2px solid gray; margin-top: -3px; height: 40px;padding-top: 20px; margin-left: 100px; margin-right: 1400px; padding-left: 30px; padding-bottom: 10px;">
+        <img src="../IMAGES/location.png" height="30px">
+        <p style="margin-left: 45px; margin-top: -30px; font-size: 20px;">My Address</p>
+    </div>
+    <div
+        style="border: 2px solid gray; margin-top: -3px; height: 40px;padding-top: 20px; margin-left: 100px; margin-right: 1400px; padding-left: 30px; padding-bottom: 10px;">
+        <img src="../IMAGES/menu-burger.svg" height="30px">
+        <p style="margin-left: 45px; margin-top: -30px; font-size: 20px;">Change Password</p>
+    </div>
+    <div
+        style="border: 2px solid gray; margin-top: -3px; height: 40px;padding-top: 20px; margin-left: 100px; margin-right: 1400px; padding-left: 30px; padding-bottom: 10px;">
+        <img src="../IMAGES/logout.png" height="30px">
+        <p style="margin-left: 45px; margin-top: -30px; font-size: 20px;">Logout</p>
+    </div>
+    <!-- <div style="border: 2px solid gray; margin-top: -430px; height: 30px;padding-top: 20px; margin-left: 600px; margin-right: 1400px; padding-left: 600px; padding-bottom: 10px; background-color:rgb(223, 221, 221); padding-right: 200px;">
+        <p style="margin-left: -580px; margin-top: 3px; font-size: 20px;">Hello  Rosie</p>
+    </div> 
+    <div style="border: 1px solid gray; margin-top: -1px; height: 40px;padding-top: 20px; margin-left: 600px; margin-right: 1400px; padding-left: 30px; padding-bottom: 30px; padding-right: 771px;">
+        <p style="margin-left: 45px; margin-top: -30px; font-size: 20px;"> From Your account dashboard .you can easily check& view your recent order.manage your shipping and biling addresses and edit your Password and account details.</p>
+    </div>  -->
+    <div class="dashboard " style="position: absolute ;right:800px; top: 250px; ;">
+        <div class="header" style="width: 700px;border: 1px solid grey;">Hello Rosie</div>
+        <div class="content" style="width: 688.5px; border: 1px solid grey;">
+            From your account dashboard, you can easily check & view your recent order, 
+            manage your shipping and billing addresses, and edit your password and account details.
+        </div>
+    </div>
+    <br>
+    <div style="display: flex; background-color: rgb(146, 181, 181);height:60px ; ">
+        <div style="margin-top: -70px;">
+            <img src="../Images/icon-email.svg" height="45px" style="margin-left: 60px;margin-top: 80px;">
+            <p style="margin-left: 140px;margin-top: -40px;">Sign in to Newsletter</p>
+            <p style="margin-left: 690px;margin-top: -34px;">....and recieve $25 coupon for first shopping</p>
+            <input type="email" placeholder="Enter Your Email" class="email" style="position: absolute;margin-top: -45px; left: 1000px; height: 40px; width: 300px;">
+            <input type="button" value="Subscribe" class="subscribe" style=" margin-left: 1288px;">
+        </div>
+    </div>
+    <footer>
+        <nav>
+        <img src="../IMAGES/logo.png" class="two"/>
+        <p style="color: gray;font-size: 12px;">Contact</p>
+        <p><span style="font-size: 15px; color: rgb(7, 64, 64);">Address:</span><span style="font-size: 15px;">13 Tlemcen Road,Street 32,Beb-Wahren</span></p>
+        <p><span style="font-size: 15px; color: rgb(7, 64, 64);">Phone:</span><span style="font-size: 15px;">+01 2222 365/(+91)01 2345 6789</span></p>
+        <p><span style="font-size: 15px; color: rgb(7, 64, 64);">Hours:</span><span style="font-size: 15px;">10:00- 18:00,Mon-Sat</span></p>
+        <p style="font-size: 13px;">Follow Me</p>
+        <img src="../Images/icon-facebook.svg" height="15px">
+        <img src="../Images/icon-twitter.svg" height="15px">
+        <img src="../Images/icon-instagram.svg" height="15px">
+        <img src="../Images/icon-pinterest.svg" height="15px">
+        <img src="../Images/icon-youtube.svg" height="15px">
+        </nav>
+        <ul class="ll">
+            <h5 style="color: gray;">Address</h5>
+            <p style="margin-left: -20px;"><a href="#">About Us</a></p>
+            <p style="margin-left: -20px;"><a href="#">Delivery Information</a></p>
+            <p style="margin-left: -20px;"><a href="#">Privacy Policy</a></p>
+            <p style="margin-left: -20px;"><a href="#">Terms& Conditions</a></p>
+            <p style="margin-left: -20px;"><a href="#">Contact Us</a></p>
+            <p style="margin-left: -20px;"><a href="#">Support Center</a></p>
+        </ul>
+        <ul class="ll">
+            <h5 style="color: gray;">My Account</h5>
+            <p style="margin-left: -20px;"><a href="#">View Cart</a></p>
+            <p style="margin-left: -20px;"><a href="#">Sign In</a></p>
+            <p style="margin-left: -20px;"><a href="#">My Wishlist</a></p>
+            <p style="margin-left: -20px;"><a href="#">Track My Order</a></p>
+            <p style="margin-left: -20px;"><a href="#">Help</a></p>
+            <p style="margin-left: -20px;"><a href="#">Order</a></p>
+        </ul>
+        <ul type="none">
+            <h5 style="color: gray;">Secure Payed Gateways</h5>
+            <img src="../IMAGES/payment-method (1).png">
+            
+        </ul>
+    </footer>
+
+
+
+
+</body>
+
+</html>
+
+<!-- style="margin-left: 45px; margin-top: -30px; font-size: 20px; flex-wrap: wrap;" -->

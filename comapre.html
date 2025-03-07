@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compare</title>
+    <style>
+        header {
+        display: flex;
+        padding-left: 30px;
+        justify-content: baseline;
+        }
+        nav {
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+        a {
+            padding: 25px;
+        }
+        nav a:hover {
+            color: rgb(25, 226, 226);
+        }
+        .search {
+            margin-right: 100px;
+            margin-top: 15px;
+        }
+        .search-bar {
+            position: absolute;
+            left: 1380px;
+        }
+        .icons {
+            display: flex;
+            height: 20px;
+            padding-top: 18px;
+            padding-right: 320px;
+            gap:25px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            height: 50px;
+        }
+        .circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .red { background-color: orange; }
+        .green { background-color: red; }
+        .blue { background-color: yellow; }
+        .add-to-cart{
+            height: 40px;
+            width: 100px;
+            border: 0;
+            background-color: rgb(25, 121, 121);
+            color: white;
+            border-radius: 5px;
+            margin-left: 170px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        .email{
+        height: 30px;
+        width: 240px;
+        background-color: white;
+        border: 0;
+        margin-left: 990px;
+        }
+        .subscribe{
+        height: 32px;
+        width: 100px;
+        background-color: black;
+        color: white;
+        border: 0;
+        border-top-right-radius:5px;
+        border-bottom-right-radius:5px;
+        position: absolute;
+        top: 2360px;
+        left:1200px ;
+        }
+        footer{
+        background-color: white;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        margin-top:0px;
+        }
+        .two{
+        height: 50px;
+        margin-top: -20px;
+        }
+        nav{
+        margin: auto;
+        grid-template-columns: 25% 25% 25% 25%;
+        font-size: 10px;
+        color: gray;
+        }
+        ul a{
+        color: black;
+        text-decoration: none;
+        }
+        .section{
+        height: 100px;
+        width: 400px;
+        }
+        .ll :hover{
+        color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../IMAGES/logo.png" height="45px" style="margin-left: 50px;">
+        <nav>
+            <a style="font-size: 15px;color: black;text-decoration: none;"  href="./home.html">Home</a>
+            <a style="font-size: 15px;color: black;text-decoration: none;" href="./shop.html" >Shop</a>
+            <a style="font-size: 15px;color: black;text-decoration: none;" href="./myaccount.html" >My Account</a>
+            <a style="font-size: 15px;color: aqua;text-decoration: none;" href="./comapre.html" >Compare</a>
+            <a style="font-size: 15px;color: black;" href="./login.html">Login</a>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="search for the items" style="margin-left: 35PX;">
+            <img src="../Images/search.png" class="search-bar">
+        </div>
+        <div class="icons">
+            <img src="../IMAGES/icon-heart (1).svg">
+            <img src="../IMAGES/icon-cart.svg">
+        </div>
+    </header>
+    <div style="display: flex; background-color: rgb(223, 221, 221);">
+        <p style="margin-left: 90px; margin-top: 20px;">Home > Shop >Compare</p> 
+        <!-- <p>Shop > </p> 
+        <p>Compare</p> -->
+    </div>
+    <table border="1px " style="border-collapse: collapse; border: gray;margin-left: 80px;margin-top: 80px;margin-bottom: 50px;">
+        <tbody>
+            <tr>
+                <td style="color: gray;text-align: center;">Image</td>
+                <td><img src="../Images/product-2-1.jpg" height="400px" style="padding-left: 25px;padding-right: -10PX;padding: 10PX;"></td>
+                <td><img src="../Images/product-4-1.jpg" height="400px" style="padding-left: 25px;padding-right: -10PX;"></td>
+                <td><img src="../Images/product-7-1.jpg" height="400px" style="padding-left: 25px;padding-right: -10PX;"></td>
+            </tr>
+            <tr>
+                <td style="color: gray;text-align: center;">Name</td>
+                <td style="color: rgb(54, 117, 117);text-align: center;">Plain Striola Shirts</td>
+                <td style="color: rgb(54, 117, 117);text-align: center;">Chen Cardigan</td>
+                <td style="color: rgb(54, 117, 117);text-align: center;">Henley Shirt</td>
+            </tr>
+            <tr>
+                <td style="color: gray;text-align: center;">Price</td>
+                <td style="text-align: center;">$35</td>
+                <td style="text-align: center;">$67</td>
+                <td style="text-align: center;">$24</td>
+            </tr>
+            <tr>
+                <td style="color: gray;text-align: center;">Description</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptate sequi? Ad architecto maxime ratione hic amet deleniti rerum eius natus fugiat ab rem suscipit repudiandae, alias, iure, nisi repellat?</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptate sequi? Ad architecto maxime ratione hic amet deleniti rerum eius natus fugiat ab rem suscipit repudiandae, alias, iure, nisi repellat?</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptate sequi? Ad architecto maxime ratione hic amet deleniti rerum eius natus fugiat ab rem suscipit repudiandae, alias, iure, nisi repellat?</td>
+            </tr>
+            <tr>
+                <td style="color: gray;text-align: center;">Colors</td>
+                <td>
+                    <div class="container">
+                        <div class="circle red"></div>
+                        <div class="circle green"></div>
+                        <div class="circle blue"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="container">
+                        <div class="circle red"></div>
+                        <div class="circle green"></div>
+                        <div class="circle blue"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="container">
+                        <div class="circle red"></div>
+                        <div class="circle green"></div>
+                        <div class="circle blue"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: gray;text-align: center;">Stock</td>
+                <td style="color: rgb(51, 129, 129); text-align: center;">Out of stock</td>
+                <td style="color: rgb(51, 129, 129); text-align: center;">Out of stock</td>
+                <td style="color: rgb(51, 129, 129); text-align: center;">Out of stock</td>
+            </tr>
+            <tr>
+                <td style="color: gray;text-align: center;">Weight</td>
+                <td style="text-align: center;">150gram</td>
+                <td style="text-align: center;">150gram</td>
+                <td style="text-align: center;">150gram</td>
+            </tr>
+            <tr>
+                <td style="color: gray;text-align: center;">Dimensions</td>
+                <td style="text-align: center;">N/A</td>
+                <td style="text-align: center;">N/A</td>
+                <td style="text-align: center;">N/A</td>
+            </tr>
+            <tr>
+                <td style="color: gray;text-align: center;">Buy</td>
+                <td><input type="submit" value="Add to Cart" class="add-to-cart" ></td>
+                <td><input type="submit" value="Add to Cart" class="add-to-cart" ></td>
+                <td><input type="submit" value="Add to Cart" class="add-to-cart" ></td>
+            </tr>
+            <tr>
+                <td style="color: gray;text-align: center;">Remove</td>
+                <td><img src="../IMAGES/delete.png" height="20px" style="margin-left: 210px;"></td>
+                <td><img src="../IMAGES/delete.png" height="20px" style="margin-left: 210px;"></td>
+                <td><img src="../IMAGES/delete.png" height="20px" style="margin-left: 210px;"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div style="display: flex; background-color: rgb(146, 181, 181); ">
+        <div style="margin-top: -70px;">
+            <img src="../Images/icon-email.svg" height="45px" style="margin-left: 60px;margin-top: 80px;">
+            <p style="margin-left: 140px;margin-top: -40px;">Sign in to Newsletter</p>
+            <p style="margin-left: 690px;margin-top: -34px;">....and recieve $25 coupon for first shopping</p>
+            <input type="email" placeholder="Enter Your Email" class="email" style="position: absolute;margin-top: -45px; ">
+            <input type="button" value="Subscribe" class="subscribe" style="margin-top: -1386px;">
+        </div>
+    </div>
+    </div>
+    <footer>
+        <nav>
+        <img src="../IMAGES/logo.png" class="two"/>
+        <p style="color: gray;font-size: 12px;">Contact</p>
+        <p><span style="font-size: 15px; color: rgb(7, 64, 64);">Address:</span><span style="font-size: 15px;">13 Tlemcen Road,Street 32,Beb-Wahren</span></p>
+        <p><span style="font-size: 15px; color: rgb(7, 64, 64);">Phone:</span><span style="font-size: 15px;">+01 2222 365/(+91)01 2345 6789</span></p>
+        <p><span style="font-size: 15px; color: rgb(7, 64, 64);">Hours:</span><span style="font-size: 15px;">10:00- 18:00,Mon-Sat</span></p>
+        <p style="font-size: 13px;">Follow Me</p>
+        <img src="../Images/icon-facebook.svg" height="15px">
+        <img src="../Images/icon-twitter.svg" height="15px">
+        <img src="../Images/icon-instagram.svg" height="15px">
+        <img src="../Images/icon-pinterest.svg" height="15px">
+        <img src="../Images/icon-youtube.svg" height="15px">
+        </nav>
+        <ul class="ll">
+            <h5 style="color: gray;">Address</h5>
+            <p style="margin-left: -20px;"><a href="#">About Us</a></p>
+            <p style="margin-left: -20px;"><a href="#">Delivery Information</a></p>
+            <p style="margin-left: -20px;"><a href="#">Privacy Policy</a></p>
+            <p style="margin-left: -20px;"><a href="#">Terms& Conditions</a></p>
+            <p style="margin-left: -20px;"><a href="#">Contact Us</a></p>
+            <p style="margin-left: -20px;"><a href="#">Support Center</a></p>
+        </ul>
+        <ul class="ll">
+            <h5 style="color: gray;">My Account</h5>
+            <p style="margin-left: -20px;"><a href="#">View Cart</a></p>
+            <p style="margin-left: -20px;"><a href="#">Sign In</a></p>
+            <p style="margin-left: -20px;"><a href="#">My Wishlist</a></p>
+            <p style="margin-left: -20px;"><a href="#">Track My Order</a></p>
+            <p style="margin-left: -20px;"><a href="#">Help</a></p>
+            <p style="margin-left: -20px;"><a href="#">Order</a></p>
+        </ul>
+        <ul type="none">
+            <h5 style="color: gray;">Secure Payed Gateways</h5>
+            <img src="../IMAGES/payment-method (1).png">
+            
+        </ul>
+    </footer>
+</body>
+</html>

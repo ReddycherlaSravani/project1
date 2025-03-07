@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        header {
+            /* background-color: rgb(72, 69, 75); */
+            display: flex;
+            padding-left: 30px;
+            justify-content: baseline;
+        }
+
+        nav {
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+
+        a {
+            padding: 25px;
+        }
+
+        nav a:hover {
+            color: rgb(25, 226, 226);
+        }
+
+        .search {
+            margin-left: -45px;
+            margin-right:950px;
+            margin-top: 15px;
+        }
+
+        .search-bar {
+            position: absolute;
+            left: 910px;
+        }
+        .icons {
+            position: absolute;
+            display: flex;
+            height: 20px;
+            padding-top: 18px;
+            padding-left: 930px;
+            gap: 35px;
+        }
+        .home{
+            margin-top: 60px;
+            background-color: rgb(223, 221, 221);
+            height: 50px;
+            padding-left: 70px;
+            padding-top: 7px;
+        }
+        footer{
+        background-color: white;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        margin-top:0px;
+        }
+        .two{
+        height: 50px;
+        margin-top: -20px;
+        }
+        nav{
+        margin: auto;
+        grid-template-columns: 25% 25% 25% 25%;
+        font-size: 10px;
+        color: gray;
+        }
+        ul a{
+        color: black;
+        text-decoration: none;
+        }
+        .section{
+        height: 100px;
+        width: 400px;
+        }
+        .ll :hover{
+        color: orangered;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../IMAGES/logo.png" height="45px" style="margin-left: 70px;">
+        <nav style="font-size: 15px;">
+            <a href="./home.html">Home</a>
+            <a href="./shop.html">Shop</a>
+            <a href="./myaccount.html">My Account</a>
+            <a href="./comapre.html">Compare</a>
+            <a style="color: cyan" href="./login.html">Login</a>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="search for the items" style="margin-left: 45PX;">
+            <img src="../Images/search.png" class="search-bar">
+        </div>
+        <div class="icons">
+            <img src="../IMAGES/icon-heart (1).svg">
+            <img src="../IMAGES/icon-cart.svg">
+        </div>
+
+    </header>
+    <div class="home">
+        <p>Home > Login / Register</p>
+    </div>
+    <div  style="border: 1px solid grey; width: 600px; margin-top: 60px; margin-left: 70px; padding-top: -20px; position: absolute; padding-right: -60px; padding-bottom: 55px; border: 1px solid gray; border-radius: 10px;">
+        <h3 style="font-size: 25px; margin-left: 70px; margin-top: 50px;"> LOGIN</h3>
+        <input type="email" value="Your Email" style="height: 40px; width: 450px; margin-left: 70px; padding-left: 10px; position: absolute; border-radius: 5px; border: 1px solid grey;">
+        <input type="text" value="Your Password" style="height: 40px; width: 450px; margin-left:70px; padding-left:10px ; margin-top: 70px; position: absolute; border-radius: 5px; border: 1px solid grey;">
+        <input type="button" value="Login" style="height: 50px; width: 100px; margin-top: 130px; margin-left: 69px; border-radius: 5px; color: white; background-color: rgb(35, 87, 77);"> 
+    </div>
+    <div style="position: absolute; left: 900px; top: 220px; border: 1px solid grey; right: 350px; bottom: 200px; padding-top: 5px; border-radius: 8px;">
+        <h3 style="margin-left: 80px;font-size: 30px; margin-top: 90px;">Create an Account</h3>
+        <input type="text" value="Username" style="margin-left: 80px; margin-top: 8px; height: 25px; width: 450px; border-radius: 5px; border: 1px solid gray; padding: 10px; position: absolute;">
+        <input type="email" value="Your Email" style="margin-left: 80px; margin-top: 75px; height: 40px; width: 455px; padding-left: 10px; border-radius: 5px; border: 1px solid grey;position: absolute;" >
+        <input type="text" value="Your Password" style="top: 300px; position: absolute; height: 40px; width: 458px; margin-left:80px; border: 1px solid gray; border-radius: 5px;position: absolute;">
+        <input type="button" value="Submit & Register" style="top: 380px; position: absolute; margin-left: 80px; height: 50px; width: 160px; color: white; background-color: rgb(9, 72, 75); position: absolute;">
+    </div>
+    <br>
+     <div style="display: flex; background-color:rgb(146, 181, 181); gap: 200px; margin-top: 650px ;">
+        <img src="../Images/icon-email.svg" style="height: 40px; width: 260px; margin-top: 8px; margin-left: -10px; position: absolute;">
+        <p style="position: absolute; margin-left: 170px; font-size: 15px;">Sign in to Newsletter</p>
+        <p style="margin-left: 850px; font-size: 15px;">....and recieve $25 coupon for first shopping</p>
+        
+        <input type="text" placeholder="search here email" style=" position: absolute; margin-left: 1300px; height: 42px; width: 300px;">
+        <input type="button" value="subscribe" style="position: absolute; margin-left: 1550px; height: 47px; width: 130px; background-color: black; color: white;">
+     </div>
+
+     <footer>
+        <nav>
+        <img src="../IMAGES/logo.png" class="two"/>
+        <p style="color: gray;font-size: 12px;">Contact</p>
+        <p><span style="font-size: 15px; color: rgb(7, 64, 64);">Address:</span><span style="font-size: 15px;">13 Tlemcen Road,Street 32,Beb-Wahren</span></p>
+        <p><span style="font-size: 15px; color: rgb(7, 64, 64);">Phone:</span><span style="font-size: 15px;">+01 2222 365/(+91)01 2345 6789</span></p>
+        <p><span style="font-size: 15px; color: rgb(7, 64, 64);">Hours:</span><span style="font-size: 15px;">10:00- 18:00,Mon-Sat</span></p>
+        <p style="font-size: 13px;">Follow Me</p>
+        <img src="../Images/icon-facebook.svg" height="15px">
+        <img src="../Images/icon-twitter.svg" height="15px">
+        <img src="../Images/icon-instagram.svg" height="15px">
+        <img src="../Images/icon-pinterest.svg" height="15px">
+        <img src="../Images/icon-youtube.svg" height="15px">
+        </nav>
+        <ul class="ll">
+            <h5 style="color: gray;">Address</h5>
+            <p style="margin-left: -20px;"><a href="#">About Us</a></p>
+            <p style="margin-left: -20px;"><a href="#">Delivery Information</a></p>
+            <p style="margin-left: -20px;"><a href="#">Privacy Policy</a></p>
+            <p style="margin-left: -20px;"><a href="#">Terms& Conditions</a></p>
+            <p style="margin-left: -20px;"><a href="#">Contact Us</a></p>
+            <p style="margin-left: -20px;"><a href="#">Support Center</a></p>
+        </ul>
+        <ul class="ll">
+            <h5 style="color: gray;">My Account</h5>
+            <p style="margin-left: -20px;"><a href="#">View Cart</a></p>
+            <p style="margin-left: -20px;"><a href="#">Sign In</a></p>
+            <p style="margin-left: -20px;"><a href="#">My Wishlist</a></p>
+            <p style="margin-left: -20px;"><a href="#">Track My Order</a></p>
+            <p style="margin-left: -20px;"><a href="#">Help</a></p>
+            <p style="margin-left: -20px;"><a href="#">Order</a></p>
+        </ul>
+        <ul type="none">
+            <h5 style="color: gray;">Secure Payed Gateways</h5>
+            <img src="../IMAGES/payment-method (1).png">
+            
+        </ul>
+    </footer>
+
+    
+    
+</body>
+</html>
